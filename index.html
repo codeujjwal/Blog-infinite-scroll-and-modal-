@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>My Blog</title>
+  </head>
+  <body>
+    <nav>
+      <img
+        src="https://source.unsplash.com/300x300/?person"
+        height="80px"
+        width="80px"
+      />
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Blogs</li>
+        <li>Contct us</li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="btn-bars">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <h1>My Blogs..</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+        laborum veniam enim obcaecati consectetur nulla odio. Facilis
+        perspiciatis magnam porro?
+      </p>
+      <button id="open" class="btn-signup">
+        <i>Sign Up</i>
+      </button>
+    </header>
+    <div id="filter" class="filter">
+      <h2>Search....</h2>
+      <input type="text" placeholder="Filter posts...">
+    </div>
+    <div id="posts_container" class="posts-container">
+
+    </div>
+
+    <div id="loader" class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <header>
+            <h3>Sign Up</h3>
+            <button id="close" class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </header>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter Your Name" />
+          </div>
+          <div>
+            <label for="Email">Email</label>
+            <input type="Email" placeholder="Enter Your Email" />
+          </div>
+          <div>
+            <label for="name">Password</label>
+            <input type="password" placeholder="Enter Your Password" />
+          </div>
+          <div>
+            <label for="password2">Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" />
+          </div>
+          <div>
+            <button>
+              <input type="submit" value="submit" class="submit-btn" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
